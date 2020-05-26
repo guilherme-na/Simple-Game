@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Guilherme Noronha">
+		<meta name="description" content="Jogo em JavaScript">
+		<meta name="keyword" content="Jogo, Web, Impacta">
+		<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	</head>
+	<body>
+		<main>
+			<div id="fundoGame" class="fundoGame">
+				<div id="inicio" class="inicio" onclick="start()">
+					<button class="button-game">JOGAR</button> 
+					<a href="intructions.html" id="text">Instruções para jogar</a> 
+				</div>
+				
+				<div id="gameplay" class="gameplay"></div>
+			</div>
+		</main>
+		<audio id="trilha">
+			<source src="mp3/adventure.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="audioExplosao">
+			<source src="mp3/explosao.mp3" type="audio/mpeg">
+		</audio>
+		<script src="js/jquery-3.5.0.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/jquery-collision.js"></script>
+	</body>
+</html>

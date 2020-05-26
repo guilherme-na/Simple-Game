@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+body {
+    background-color: #000000;
+}
+
+main {
+    width: 950px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*Inicio*/
+.fundoGame {
+    width: 950px;
+    height: 550px;
+    background-image: url(../image/bg.jpg);
+    border: solid 8px #ffffff;
+    background-repeat: repeat-x;
+}
+
+.button-game { 
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: #4287f5;
+    border: 1px solid #4287f5;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 5px 0px 0px #1228a6;
+}
+
+
+.inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 200px;
+}
+
+.inicio a {
+    margin-top: 100px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/*Instruções*/
+.header { 
+	color: white;
+	font-weight: bold;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	text-decoration: none;
+	list-style: none;
+}
+
+.instructions {  
+	color: #1b6ca8; 
+}
+
+.keybinds {
+	color: #1b6ca8;
+}
+
+.win {
+	color: #1b6ca8;
+}
+
+.button-back { 
+	color: white;
+	background-color: #ff4a4a;
+	padding: 10px;
+	width: 150px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px 0px #a82613;
+}
+
+.text {
+    color: #fcf876;
+}
+
+/*ANimação Jogador*/
+
+.player {
+    width: 128px;
+    height: 128px;
+    background-image: url(../image/player.png);
+    animation: play .5s steps(3) infinite;
+    position: relative;
+    left: 50px;
+    top: 10px;
+
+    -webkit-animation: play .5s steps(3) infinite;
+    -moz-animation: play .5s steps(3) infinite;
+    -ms-animation: play .5s steps(3) infinite;
+    -o-animation: play .5s steps(3) infinite;
+}
+
+@keyframes play {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -384px;
+    }
+}
+
+.inimigo {
+    width: 128px;
+    height: 128px;
+    background-image: url(../image/inimigo.png);
+    animation: inimi .5s steps(3) infinite;
+    position: relative;
+    left: 800px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-animation: inimi .5s steps(3) infinite;
+    -moz-animation: inimi .5s steps(3) infinite;
+    -ms-animation: inimi .5s steps(3) infinite;
+    -o-animation: inimi .5s steps(3) infinite;
+}
+
+@keyframes inimi {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -384px;
+    }
+}
+
+.npc {
+    width: 128px;
+    height: 128px;
+    background-image: url(../image/npc.png);
+    animation: npcanima .5s steps(3) infinite;
+    position: relative;
+    top: 130px;
+    left: 800px;
+
+    -webkit-animation: npcanima .5s steps(3) infinite;
+    -moz-animation: npcanima .5s steps(3) infinite;
+    -ms-animation: npcanima .5s steps(3) infinite;
+    -o-animation: npcanima .5s steps(3) infinite;
+}
+
+@keyframes npcanima {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -384px;
+    }
+
+}
+
+/*Disparo e Explosão*/    
+
+.disparo {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-image: url(../image/bullet.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explosao {
+    width: 250px;
+    height: 241px;
+    position: absolute;
+}
+
+.explosao2 {
+    width: 250px;
+    height: 241px;
+    position: absolute;
+}
+
+.explosaoPlayer {
+    width: 250px;
+    height: 241px;
+    position: absolute;
+}
+
+.amigo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/amigo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 60px;  
+    left: 90px;
+}
+
+.explosaoAmigo {
+    width: 256px;
+    height: 256px;
+    position: absolute;
+}
+
+
+/*Vitória*/
+
+.pontos {
+    font-size: 50px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    width: 150px;
+    height: 55px;
+    position: absolute;
+    left: 610px;
+    top: 30px;
+}
+
+.vitoria {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+.vitoria h1 {
+    padding-top: 50px;
+}

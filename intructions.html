@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Marques">
+    <meta name="description" content="Jogo em JavaScript">
+    <meta name="keyword" content="Jogo, Web, Impacta">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Jogo para WEB</title>
+</head>
+
+<body>
+    <main>
+        <div id="fundoGame" class="fundoGame">
+                    
+   
+
+            <header class="header">
+                <h1 class="instructions">Instruções</h1> 
+                <p class="text">O jogo se passa ná epoca da Terceira Guerra Mundial, o mundo 
+                    se alastrou e o mundo precisa de sua ajuda para salvar o mundo! ajude!!
+                </p>
+
+                 <h1 class="keybinds">Keybinds</h1> 
+                 <li class="item">
+                    <p class="text">Andar: W(Cima) A(Lado Direito) S(Para Baixo) D(Para Direita)</p>
+                 </li>
+                 <li class="item"> 
+                     <p class="text">Atirar: Space</p>
+                 </li>
+                 <h1 class="win">Como Ganhar</h1>    
+                 <p class="text">Mate o máximo de inimigos possível e faça 100 pontos para ganhar!</p>
+                 <a class="button-back" href="index.html">Back</a>
+            </header>
+
+        </div>
+
+
+    </main> 
+    <audio id="trilha"> <!--Mude o que quiser aqui-->
+        <source src="mp3/trilha.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioExplosao"> <!--Mude o que quiser aqui-->
+        <source src="mp3/explosao.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/script.js"></script>
+    <script src="js/gameloop-1.0.js"></script>
+    <script src="js/jquery-collision.js"></script>
+</body>
+
+</html>
